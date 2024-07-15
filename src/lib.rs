@@ -1,5 +1,7 @@
 use bevy::prelude::{App, Plugin};
 
+/// This trait is an extension trait for bevy's App providing methods that make assertions on the
+/// plugins attached in the app.
 pub trait AssertPluginAppExt {
     /// This function checks whether `P` has been registered in the `App``.
     /// If so, it does nothing; otherwise, it panics.
